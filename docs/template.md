@@ -1,5 +1,8 @@
 # 情绪拆解模板
 
+[![中文](https://img.shields.io/badge/lang-中文-red.svg)](template.md)
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](template.en.md)
+
 > 每次情绪升起，用这个模板拆解。不用分析，不用深挖，写下来就已经破了一半。
 
 ---

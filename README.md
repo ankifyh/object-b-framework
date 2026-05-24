@@ -1,5 +1,29 @@
 # 预期验证模型（Expectation-Validation Model）
 
+[![中文](https://img.shields.io/badge/lang-中文-red.svg)](README.md)
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
+
+## 🌐 选择语言 / Select Language
+
+<details>
+<summary><b>点击展开全部 56 种语言</b></summary>
+
+| 语系 | 语言 |
+|------|------|
+| **东亚** | [中文](README.md) · [English](README.en.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [ไทย](i18n/README.th.md) · [မြန်မာဘာသာ](i18n/README.my.md) · [ភាសាខ្មែរ](i18n/README.km.md) · [ລາວ](i18n/README.lo.md) · [Mongol](i18n/README.mn.md) |
+| **南亚** | [हिन्दी](i18n/README.hi.md) · [বাংলা](i18n/README.bn.md) · [தமிழ்](i18n/README.ta.md) · [తెలుగు](i18n/README.te.md) · [मराठी](i18n/README.mr.md) · [ગુજરાતી](i18n/README.gu.md) · [नेपाली](i18n/README.ne.md) · [සිංහල](i18n/README.si.md) · [سنڌي](i18n/README.sd.md) |
+| **中东** | [العربية](i18n/README.ar.md) · [עברית](i18n/README.he.md) · [فارسی](i18n/README.fa.md) · [Türkçe](i18n/README.tr.md) · [Azərbaycan](i18n/README.az.md) · [Қазақша](i18n/README.kk.md) · [Հայերեն](i18n/README.hy.md) · [ქართული](i18n/README.ka.md) |
+| **欧洲（西/南）** | [Español](i18n/README.es.md) · [Português](i18n/README.pt.md) · [Français](i18n/README.fr.md) · [Italiano](i18n/README.it.md) · [Català](i18n/README.ca.md) · [Galego](i18n/README.gl.md) · [Euskara](i18n/README.eu.md) · [Română](i18n/README.ro.md) |
+| **欧洲（北/中）** | [Deutsch](i18n/README.de.md) · [Nederlands](i18n/README.nl.md) · [Svenska](i18n/README.sv.md) · [Dansk](i18n/README.da.md) · [Norsk](i18n/README.nb.md) · [Suomi](i18n/README.fi.md) · [Íslenska](i18n/README.is.md) · [Eesti](i18n/README.et.md) · [Latviešu](i18n/README.lv.md) · [Lietuvių](i18n/README.lt.md) · [Polski](i18n/README.pl.md) · [Čeština](i18n/README.cs.md) · [Slovenčina](i18n/README.sk.md) · [Magyar](i18n/README.hu.md) |
+| **欧洲（东/南）** | [Русский](i18n/README.ru.md) · [Українська](i18n/README.uk.md) · [Български](i18n/README.bg.md) · [Српски](i18n/README.sr.md) · [Hrvatski](i18n/README.hr.md) · [Slovenščina](i18n/README.sl.md) · [Bosanski](i18n/README.bs.md) · [Македонски](i18n/README.mk.md) · [Shqip](i18n/README.sq.md) |
+| **非洲** | [Kiswahili](i18n/README.sw.md) · [Hausa](i18n/README.ha.md) · [Yorùbá](i18n/README.yo.md) · [Igbo](i18n/README.ig.md) · [isiZulu](i18n/README.zu.md) · [Afrikaans](i18n/README.af.md) · [አማርኛ](i18n/README.am.md) |
+| **东南亚** | [Bahasa Indonesia](i18n/README.id.md) · [Bahasa Melayu](i18n/README.ms.md) · [Filipino](i18n/README.fil.md) |
+| **凯尔特/其他** | [Gaeilge](i18n/README.ga.md) · [Malti](i18n/README.mt.md) |
+
+</details>
+
+---
+
 你有没有过这样的时刻：
 
 > 「我知道不该焦虑，但就是控制不住。」

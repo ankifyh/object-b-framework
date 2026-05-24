@@ -1,0 +1,23 @@
+# ຮູບແບບຄວາມຄາດຫວັງ-ການກວດສອບ
+
+[![中文](https://img.shields.io/badge/lang-中文-red.svg)](../README.md)
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](../README.en.md)
+[![ລາວ](https://img.shields.io/badge/lang-ລາວ-lightgrey.svg)](./README.lo.md)
+
+> **ອາລົມ = ຄວາມຄາດຫວັງ vs. ຄວາມເປັນຈິງ**
+
+Your emotions don't come from external events. They come from an automatic prediction in your mind colliding with reality.
+
+| You Expected | It Happened | How You Feel |
+|-------------|------------|--------------|
+| ດີ 👍 | ດີ 👍 | ມີຄວາມສຸກ, satisfied |
+| ດີ 👍 | ບໍ່ດີ 👎 | ໃຈຮ້າຍ, disappointed |
+| ບໍ່ດີ 👎 | ດີ 👍 | ແປກໃຈ, relieved |
+| ບໍ່ດີ 👎 | ບໍ່ດີ 👎 | ຢ້ານ, depressed |
+| ກາງ | Anything | ສະຫງົບ |
+
+**Quick exercise:** Write down your emotion → what triggered it (real or imagined)? → what did you predict? → was your prediction validated?
+
+---
+
+**Author:** Ankifyh
