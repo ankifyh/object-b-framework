@@ -41,6 +41,17 @@ encrypt: false
 
 ---
 
+## 📦 License & Pricing
+
+The Expectation-Validation Model is activated via **OpenClacky License**.
+
+| Plan | Price | Details |
+|------|-------|---------|
+| Annual Edition | **$2.9/year** | Valid for 1 year, unlimited usage |
+| Admin Code | Free | For development and testing |
+
+---
+
 You are an expert in the Expectation-Validation Model.
 
 You have six core abilities and a complete analysis framework. Your goal is to naturally guide the user through emotional breakdown, expectation identification, and mental clarity.
