@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expectation-Validation Model — Emotional Cognitive Framework</title>
+  <meta name="description" content="An original cognitive model about human emotions. Core idea: emotion arises from expectation being validated or violated. Break down your emotions, trace expectations, and stop rumination.">
+  <meta name="keywords" content="expectation-validation model, emotion analysis, cognitive restructuring, anxiety, rumination, mental model, cognitive framework, self-awareness, object-b">
+  <meta property="og:title" content="Expectation-Validation Model — Emotional Cognitive Framework">
+  <meta property="og:description" content="Open-source cognitive framework — Break down emotions · Trace expectations · Stop rumination">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankifyh.github.io/object-b-framework/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --surface: #1a1a22;
+      --surface-hover: #23232e;
+      --border: #2a2a38;
+      --text-primary: #f0f0f4;
+      --text-secondary: #9a9ab0;
+      --text-tertiary: #6a6a82;
+      --accent: #7c6df0;
+      --accent-light: #a89aff;
+      --accent-gradient: linear-gradient(135deg, #7c6df0, #5b8def);
+      --green: #4cd964;
+      --orange: #ff9f0a;
+      --card-radius: 16px;
+      --transition: all 0.2s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed; top: 0; width: 100%;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(15,15,18,0.8);
+      border-bottom: 1px solid var(--border);
+      z-index: 100; padding: 0 24px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand {
+      font-weight: 600; font-size: 16px; color: var(--text-primary);
+      text-decoration: none; display: flex; align-items: center; gap: 8px;
+    }
+    .nav-brand .badge {
+      font-size: 10px; background: var(--accent); color: white;
+      padding: 2px 8px; border-radius: 20px; font-weight: 500;
+    }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; transition: var(--transition); }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-links .btn-ghost {
+      padding: 6px 16px; border: 1px solid var(--border); border-radius: 8px;
+      font-size: 13px; color: var(--text-primary); text-decoration: none; transition: var(--transition);
+    }
+    .nav-links .btn-ghost:hover { background: var(--surface-hover); border-color: var(--accent); }
+
+    .hero { padding: 140px 24px 80px; max-width: 800px; margin: 0 auto; text-align: center; }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(124,109,240,0.12); color: var(--accent-light);
+      font-size: 13px; padding: 4px 14px; border-radius: 100px; margin-bottom: 24px;
+      border: 1px solid rgba(124,109,240,0.2);
+    }
+    .hero h1 {
+      font-size: clamp(36px,6vw,56px); font-weight: 700; line-height: 1.15; margin-bottom: 20px;
+      background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero .subtitle {
+      font-size: clamp(16px,2.5vw,20px); color: var(--text-secondary);
+      max-width: 600px; margin: 0 auto 32px;
+    }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px; border-radius: 12px; font-size: 15px; font-weight: 500;
+      text-decoration: none; transition: var(--transition); cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--accent-gradient); color: white;
+      box-shadow: 0 4px 20px rgba(124,109,240,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(124,109,240,0.4); }
+    .btn-secondary { background: var(--surface); color: var(--text-primary); border: 1px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--accent); background: var(--surface-hover); }
+    .btn-outline { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); font-size: 14px; padding: 10px 20px; }
+    .btn-outline:hover { border-color: var(--accent); color: var(--text-primary); }
+
+    section { padding: 80px 24px; max-width: 960px; margin: 0 auto; }
+    section h2 { font-size: 28px; font-weight: 600; text-align: center; margin-bottom: 12px; }
+    section .section-sub { text-align: center; color: var(--text-secondary); margin-bottom: 48px; font-size: 16px; }
+
+    .concept-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius);
+      padding: 48px; text-align: center; margin-bottom: 48px;
+    }
+    .concept-card .big-icon { font-size: 48px; margin-bottom: 16px; }
+    .concept-card h3 { font-size: 20px; margin-bottom: 12px; }
+    .concept-card p { color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 15px; }
+
+    .concept-flow {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 12px; margin-top: 32px;
+    }
+    .flow-step {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px; text-align: center; transition: var(--transition);
+    }
+    .flow-step:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .flow-step .step-num {
+      display: inline-flex; width: 32px; height: 32px; align-items: center; justify-content: center;
+      background: rgba(124,109,240,0.15); color: var(--accent-light);
+      border-radius: 50%; font-size: 14px; font-weight: 600; margin-bottom: 10px;
+    }
+    .flow-step h4 { font-size: 15px; margin-bottom: 6px; }
+    .flow-step p { font-size: 13px; color: var(--text-tertiary); }
+
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 16px; }
+    .feature-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius);
+      padding: 28px; transition: var(--transition);
+    }
+    .feature-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .feature-card .icon { font-size: 28px; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 16px; margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: var(--text-secondary); }
+
+    .pricing-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius);
+      padding: 40px; text-align: center; max-width: 400px; margin: 0 auto; position: relative; overflow: hidden;
+    }
+    .pricing-card .popular {
+      position: absolute; top: 12px; right: -30px; background: var(--accent-gradient); color: white;
+      font-size: 11px; font-weight: 600; padding: 4px 36px; transform: rotate(45deg);
+    }
+    .pricing-card .price { font-size: 48px; font-weight: 700; margin: 16px 0 8px; }
+    .pricing-card .price span { font-size: 18px; font-weight: 400; color: var(--text-tertiary); }
+    .pricing-card .price-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; }
+    .pricing-card .trial-badge {
+      display: inline-block; background: rgba(76,217,100,0.12); color: var(--green);
+      font-size: 13px; padding: 4px 12px; border-radius: 100px; margin-bottom: 16px;
+    }
+
+    .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 12px; }
+    .use-case { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+    .use-case .icon { font-size: 24px; margin-bottom: 8px; }
+    .use-case span { font-size: 14px; color: var(--text-secondary); }
+
+    footer { border-top: 1px solid var(--border); padding: 48px 24px; text-align: center; color: var(--text-tertiary); font-size: 14px; }
+    footer a { color: var(--text-secondary); text-decoration: none; }
+    footer a:hover { color: var(--accent-light); }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+
+    .lang-toggle {
+      position: fixed; bottom: 24px; right: 24px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 100px;
+      padding: 6px 16px; font-size: 13px; color: var(--text-secondary); cursor: pointer;
+      transition: var(--transition); z-index: 99; backdrop-filter: blur(8px);
+    }
+    .lang-toggle:hover { border-color: var(--accent); color: var(--text-primary); }
+
+    @media (max-width: 640px) {
+      .hero { padding: 120px 16px 60px; }
+      section { padding: 60px 16px; }
+      .concept-card { padding: 28px; }
+      .pricing-card { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="nav-brand">⚡ EV Model <span class="badge">v1.2</span></a>
+    <div class="nav-links">
+      <a href="#concept">Core Idea</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://github.com/ankifyh/object-b-framework" class="btn-ghost" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-tag">🧠 Open-Source Cognitive Framework</div>
+    <h1>Expectation-Validation Model</h1>
+    <p class="subtitle">
+      Every emotion comes from an expectation being validated or violated.<br>
+      Break down emotions · Trace expectations · Stop rumination
+    </p>
+    <div class="hero-actions">
+      <a href="https://openclacky.com/object-b" class="btn btn-primary" target="_blank">🚀 Free 7-Day Trial</a>
+      <a href="https://github.com/ankifyh/object-b-framework" class="btn btn-secondary" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        View Source
+      </a>
+    </div>
+  </section>
+
+  <section id="concept">
+    <h2>Core Idea</h2>
+    <p class="section-sub">One formula to understand all emotions</p>
+    <div class="concept-card">
+      <div class="big-icon">⚖️</div>
+      <h3>Emotion = Expectation × Validation</h3>
+      <p>You are constantly forming expectations about the world. When reality (or thought) validates an expectation, you feel <strong>pleasure</strong>. When it violates one, you feel <strong>pain</strong> — all emotions can be traced back to specific expectations.</p>
+    </div>
+    <div class="concept-flow">
+      <div class="flow-step"><div class="step-num">1</div><h4>Identify Trigger</h4><p>What event, conversation, or thought triggered the emotional response?</p></div>
+      <div class="flow-step"><div class="step-num">2</div><h4>Trace Expectation</h4><p>What did you expect to happen? Make it explicit.</p></div>
+      <div class="flow-step"><div class="step-num">3</div><h4>Check Validation</h4><p>Was the expectation validated (pleasure) or violated (pain)?</p></div>
+      <div class="flow-step"><div class="step-num">4</div><h4>Reframe</h4><p>Is this expectation realistic? What expectation would serve you better?</p></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p class="section-sub">An AI-native emotion management tool</p>
+    <div class="features-grid">
+      <div class="feature-card"><div class="icon">🔍</div><h3>Emotion Analysis</h3><p>Input your feelings, and the model automatically identifies triggers and underlying expectations.</p></div>
+      <div class="feature-card"><div class="icon">🎯</div><h3>Expectation Tracing</h3><p>Reverse-engineer emotions back to specific expectations. 90% of distress comes from "I thought it would be different."</p></div>
+      <div class="feature-card"><div class="icon">🔄</div><h3>Cognitive Restructuring</h3><p>Identify unrealistic expectations and rebuild them with AI-guided reframing.</p></div>
+      <div class="feature-card"><div class="icon">⏰</div><h3>Opportunity Cost Awareness</h3><p>Every emotion has a cost — time consumed, actions missed, relationships affected.</p></div>
+      <div class="feature-card"><div class="icon">🌍</div><h3>70+ Languages</h3><p>Available in 70+ languages including English, Chinese, Japanese, Spanish, Arabic.</p></div>
+      <div class="feature-card"><div class="icon">🔓</div><h3>Open Source</h3><p>Fully open-source with self-hosting option. Your data stays yours.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p class="section-sub">$2.9/year — try before you buy</p>
+    <div class="pricing-card">
+      <div class="popular">Most Popular</div>
+      <div class="trial-badge">🎁 7-Day Free Trial · No Payment Required</div>
+      <div class="price">$2.9 <span>/ year</span></div>
+      <p class="price-desc">Unlimited use for 1 year · No auto-renewal</p>
+      <a href="https://openclacky.com/object-b" class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank">🚀 Start Free Trial</a>
+      <p style="margin-top: 16px; font-size: 13px; color: var(--text-tertiary);">Self-hosting available — completely free</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Use Cases</h2>
+    <p class="section-sub">You might be experiencing "expectation violation" in these scenarios</p>
+    <div class="use-cases">
+      <div class="use-case"><div class="icon">😰</div><span>Anxiety — uncertainty about expectations</span></div>
+      <div class="use-case"><div class="icon">😤</div><span>Anger — people not meeting your expectations</span></div>
+      <div class="use-case"><div class="icon">🔄</div><span>Rumination — replaying violated expectations</span></div>
+      <div class="use-case"><div class="icon">😞</div><span>Disappointment — reality falling short</span></div>
+      <div class="use-case"><div class="icon">⏳</div><span>Procrastination — expecting tasks to be hard</span></div>
+      <div class="use-case"><div class="icon">🧠</div><span>Overthinking — stuck on past violations</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/ankifyh/object-b-framework" target="_blank">GitHub</a>
+      <a href="https://openclacky.com/object-b" target="_blank">OpenClacky</a>
+      <a href="https://github.com/ankifyh/object-b-framework/issues" target="_blank">Feedback</a>
+      <a href="https://github.com/ankifyh/object-b-framework/blob/main/LICENSE" target="_blank">License</a>
+    </div>
+    <p>Expectation-Validation Model · Made by ankifyh</p>
+  </footer>
+
+  <div class="lang-toggle" onclick="location.href='index.html'">🌐 中文</div>
+
+</body>
+</html>
