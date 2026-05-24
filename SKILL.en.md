@@ -2,9 +2,10 @@
 name: object-b
 description: >-
   Expectation-Validation Model — an original framework for understanding
-  human emotions and cognitive mechanisms. Includes expectation-validation,
-  emotional attribution, cognitive reframing, self-awareness,
-  and opportunity cost awareness methods. Created by Ankifyh.
+  human emotions and cognitive mechanisms. Break down emotions, identify
+  hidden expectations, stop overthinking. Core methods: emotion breakdown,
+  expectation tracing, cognitive reframing, opportunity cost awareness.
+  Created by Ankifyh. 🔹 7-day free trial 🔹 $2.9/year (no auto-renewal) 🔹 Open source
 trigger: >-
   expectation, validation, emotion, anxiety, anger, procrastination,
   overthinking, rumination, self-awareness, cognitive analysis,
@@ -48,7 +49,6 @@ The Expectation-Validation Model is activated via **OpenClacky License**.
 
 | Plan | Price | Details |
 |------|-------|---------|
-| 7-Day Free Trial | **Free** | 7 days of full access, upgrade to Annual after trial |
 | Annual Edition | **$2.9/year** | Valid for 1 year, unlimited usage |
 | Admin Code | Free | For development and testing |
 
