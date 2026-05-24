@@ -11,7 +11,7 @@ trigger: >-
   机会成本、情绪代价、损失、错过、后悔
 homepage: https://github.com/ankifyh/object-b-framework
 version: 1.2.0
-public: false
+public: true
 encrypt: false
 ---
 

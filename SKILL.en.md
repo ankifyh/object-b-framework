@@ -13,7 +13,7 @@ trigger: >-
   opportunity cost, emotional cost, loss, missed opportunity, regret
 homepage: https://github.com/ankifyh/object-b-framework
 version: 1.2.0
-public: false
+public: true
 encrypt: false
 ---
 
