@@ -48,6 +48,7 @@ The Expectation-Validation Model is activated via **OpenClacky License**.
 
 | Plan | Price | Details |
 |------|-------|---------|
+| 7-Day Free Trial | **Free** | 7 days of full access, upgrade to Annual after trial |
 | Annual Edition | **$2.9/year** | Valid for 1 year, unlimited usage |
 | Admin Code | Free | For development and testing |
 
