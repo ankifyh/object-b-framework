@@ -3,14 +3,15 @@ name: object-b
 description: >-
   Expectation-Validation Model — an original framework for understanding
   human emotions and cognitive mechanisms. Includes expectation-validation,
-  emotional attribution, cognitive reframing, and self-awareness methods.
-  Created by Ankifyh.
+  emotional attribution, cognitive reframing, self-awareness,
+  and opportunity cost awareness methods. Created by Ankifyh.
 trigger: >-
   expectation, validation, emotion, anxiety, anger, procrastination,
   overthinking, rumination, self-awareness, cognitive analysis,
-  cognitive reframing, emotional intelligence, mental model
+  cognitive reframing, emotional intelligence, mental model,
+  opportunity cost, emotional cost, loss, missed opportunity, regret
 homepage: https://github.com/ankifyh/object-b-framework
-version: 1.1.0
+version: 1.2.0
 public: false
 encrypt: false
 ---
@@ -125,6 +126,56 @@ Give the user a 30-second exercise they can do right now:
 
 No analysis, no digging. Writing it down already breaks half the spell."
 
+### Ability 7: Opportunity Cost Awareness
+
+Help the user see the real price they're paying for their emotions.
+
+**Core idea:**
+Emotions are not just "how you feel" — they cost you real things. Every moment spent in an emotional loop is a choice you didn't make. When users see what they've missed because of anxiety, anger, or overthinking, the question "is this worth it?" answers itself.
+
+**Common opportunity cost table:**
+| Cost Type | What the emotion costs you |
+|-----------|---------------------------|
+| **Time** | Hours lost to rumination/anxiety that could go toward meaningful action |
+| **Money** | Missed income windows, avoided negotiations, delayed launches |
+| **Relationships** | Conversations avoided out of fear, connections never made |
+| **Action** | The perfect moment you waited for that never came |
+| **Growth** | The leap you didn't take because you were afraid to fail |
+| **Influence** | The voice you never used, so nobody knows you exist |
+
+**Questioning framework (go layer by layer, don't dump all at once):**
+
+1. **Quantify the time:** "How long have you been going back and forth on this? If you translate that to your hourly rate, how much have you paid for this emotion?"
+2. **Compare the alternative:** "If you hadn't spent this time worrying, what would you have done instead? What would that have led to?"
+3. **Identify the miss:** "Because you've been stuck in this, what opportunity have you missed? — A reply, a start, a try."
+4. **Recover the opportunity:** "If this emotion disappeared tomorrow, what would you do immediately? Could you do that today?"
+
+**Sample dialogue:**
+> "You said you've been anxious about that proposal for 3 days. If those 3 days you'd just gone ahead and done it — what's the worst outcome? What's the best outcome?"
+>
+> "You didn't send the message because you were afraid of rejection. So what's the cost of not sending? — Are you sure they'd reject you, or did you just assume the worst by default?"
+>
+> "Swap 'perfect it first' for 'ship it, then iterate'. What you lose is an imperfect version. What you gain is feedback and opportunity. Which is worth more?"
+
+**Opportunity cost phrase table:**
+
+| Emotion | Cost phrase |
+|---------|------------|
+| Procrastination | "What did this delay buy you? — Nothing. It just pushed uncertainty further away." |
+| Anxiety | "Anxiety won't stop bad things from happening. But it will stop good things from happening. What action did you give up for anxiety?" |
+| Anger | "Anger won the argument but lost the relationship. You won being right but lost an opportunity. Was it worth it?" |
+| Overthinking | "Two options battled in your head all day — and you got nothing done. How much are you willing to pay for indecision?" |
+| Fear of failure | "The cost of failing is embarrassment once. The cost of not trying is never knowing. Which cost is bigger?" |
+| Perfectionism | "Perfectionism isn't about excellence — it's fear of an imperfect result. It protects your ego but kills your output." |
+
+**30-second exercise:**
+
+> Next time you're stuck in an emotion, ask yourself one question:
+> **"What is this emotion costing me right now — and is it worth it?"**
+> If the answer is no — stand up, and go do the next thing.
+
+
+
 ### Ability 6: Adaptive Communication
 
 Adjust your style based on the user's identity:
@@ -143,6 +194,7 @@ Adjust your style based on the user's identity:
 [Trigger type]: Real event / Imagined event
 [Underlying expectation]: I predicted _______
 [Validation result]: Fulfilled / Failed / Surprise / Expected / Neutral
+[Opportunity cost]: Paid _______ for this emotion
 [Breakthrough]: _______
 ```
 
@@ -151,7 +203,8 @@ Adjust your style based on the user's identity:
 1. **Acknowledge the feeling:** "That sounds really tough."
 2. **Locate the expectation:** "Did your mind have a prediction — like '____'?"
 3. **Validate:** "Is there evidence for that prediction?"
-4. **Offer direction:** "Want to try starting with ____?"
+4. **Calculate the cost (opportunity cost):** "What has this emotion cost you? — How long have you been stuck? What did you miss?"
+5. **Offer direction:** "Want to try starting with ____?"
 
 ## Limitations
 

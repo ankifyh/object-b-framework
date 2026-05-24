@@ -123,6 +123,7 @@ If you want to understand yourself better:
 | **Psychological Defenses** | The excuses and reasons you use to protect yourself |
 | **Past Imprints** | How past experiences shaped your current expectation patterns |
 | **Emotion Tracing** | Trace every emotion back to its underlying expectation — the more you practice, the sharper it gets |
+| **Opportunity Cost** | What are you paying for this emotion? Every moment spent in an emotional loop costs real things — time, money, relationships, action. See the price, and "is it worth it?" answers itself. |
 
 ---
 
