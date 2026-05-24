@@ -2,6 +2,7 @@
 
 [![中文](https://img.shields.io/badge/lang-中文-red.svg)](README.md)
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
+[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-%23FF6154?logo=producthunt&logoColor=white)](https://www.producthunt.com/posts/expectation-validation-model)
 
 ## 🌐 选择语言 / Select Language
 
