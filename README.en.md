@@ -120,6 +120,7 @@ If you want to understand yourself better:
 
 | Concept | Explanation |
 |---------|-------------|
+| **Object A / Object B** | **Object A** = expectations you're consciously aware of (e.g., "I predict I'll fail"). **Object B** = hidden expectations you don't recognize as expectations — you think of them as "just how things should be." Object B is the primary source of mental friction. |
 | **Core Desires** | What you truly want beneath the surface expectation |
 | **Psychological Defenses** | The excuses and reasons you use to protect yourself |
 | **Past Imprints** | How past experiences shaped your current expectation patterns |
